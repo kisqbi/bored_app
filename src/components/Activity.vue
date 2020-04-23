@@ -67,7 +67,7 @@ export default {
 		apiActivity
 			.get_config()
 			.then((res) => {
-				console.log("Config loaded:", res);
+				console.log("Config loaded:",res);
                     _this.updateConfig(res);
                     _this.config_loaded=true;
 			})

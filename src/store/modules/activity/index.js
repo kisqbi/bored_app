@@ -65,14 +65,15 @@ const state =  {
         
     },
 
-   
       
     items: [
+        /*
         { "activity": "Paint the first thing you see", "accessibility": 0.2, "type": "recreational", "participants": 1, "price": 0.25, "link": "", "key": "1162360" },
         { "activity": "Go to a concert with local artists with some friends", "accessibility": 0.3, "type": "social", "participants": 3, "price": 0.4, "link": "", "key": "2211716" },
         { "activity": "Fix something that's broken in your house", "accessibility": 0.3, "type": "diy", "participants": 1, "price": 0.1, "link": "", "key": "6925988" }
-    ],
-    updated: "2000-06-05 12:30:22",
+        */
+    ]
+   
 };
 
 const mutations = {
@@ -91,8 +92,10 @@ const mutations = {
             state.items.push(_cloneDeep(data));
         }
     },
-    removeItemByKey(state, { key }) {
-        let i = state.items.map(item => item.key).indexOf(key) // find index of your object
+    removeItemByKey(state, { data }) {
+
+        let i = state.items.map(item => item.key).indexOf(data) // find index of your object
+       
         state.items.splice(i, 1) // remove it from array
     },
 

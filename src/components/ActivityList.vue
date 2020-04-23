@@ -98,10 +98,10 @@
 						</v-list-item>
 				</v-list>
 				<v-list  v-else  three-line class="overflow-y-auto" height="300px" light min-width="100%">
-					<template v-for="(item, index) in items_filter">
-						<v-list-item 
+					<template>
+						<v-list-item  v-for="(item) in items_filter" :key="item.key"
 
-							:key="index"
+							
 							:set="type = getTypeByValue(item.type)"	
 						>
 							<v-list-item-avatar>
@@ -113,9 +113,10 @@
 							</v-list-item-avatar>
 							<v-list-item-content :set="price_name = getPriceRangeName(item.price)">
 								<v-list-item-title 
-									style="white-space:normal;"
-									v-html="item.activity"
-								></v-list-item-title>
+									style="white-space:normal;"	
+								>
+								{{item.activity}}
+								</v-list-item-title>
 								<v-list-item-subtitle class="pt-3">
 									<v-badge :content="item.participants">
 										<v-icon class="mt-n3 mr-0" left

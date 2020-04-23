@@ -13,16 +13,19 @@ export default () => {
         baseURL: Vue.config.BASE_URL,
         withCredentials: false,
 
-        headers: {
+        /*headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
            
-        }
+        }*/
      });
      api.interceptors.request.use(function (config) {
         // Do something before request is sent
+       console.log('interceptors request config',config)
+      // config.headers = [];
+       config.headers = {"Content-Type": "application/json"};
        
         return config;
       }, function (error) {
