@@ -18,7 +18,7 @@ npm  run serve
     "labels":{
         "activity_title":"Activity", 
         "activity_list_title":"Activity List",
-		"empty_list":"No activity saved. Go to Search and add Activity to list",		
+	"empty_list":"No activity saved. Go to Search and add Activity to list",		
         "title":"You Should",
         "activity_filter":"Hit me with a new one!",
         "save":"Save for later",
