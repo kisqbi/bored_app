@@ -87,7 +87,9 @@
 					<v-list-item >
 							
 							<v-list-item-content >
-								<v-list-item-title>
+								<v-list-item-title
+								style="white-space:normal;"
+								>
 									{{labels.empty_list}}
 								</v-list-item-title>
 								<v-list-item-subtitle class="pt-3">
@@ -113,9 +115,10 @@
 							</v-list-item-avatar>
 							<v-list-item-content :set="price_name = getPriceRangeName(item.price)">
 								<v-list-item-title 
-									style="white-space:normal;"	
+									style="white-space:normal;"
+									v-html="item.activity"
 								>
-								{{item.activity}}
+								
 								</v-list-item-title>
 								<v-list-item-subtitle class="pt-3">
 									<v-badge :content="item.participants">
