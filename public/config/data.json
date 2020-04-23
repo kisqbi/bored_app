@@ -1,0 +1,22 @@
+{
+    "labels":{
+        "activity_title":"Activity", 
+        "activity_list_title":"Activity list", 
+        "empty_list":"No activity saved. Go to Search and add Activity to list",
+        "title":"You Should",
+        "activity_filter":"Hit me with a new one!",
+        "save":"Save for later",
+        "price_min":"Cheap",
+        "price_max":"Exp.",
+        "price":"Price",
+        "participants":"Participants",
+        "type":"Type",  
+        "no_activity_title":"Sorry,",    
+        "free_range":"Free",
+        "cheap_range":"Cheap",
+        "expensive_range":"Exp.",
+        "clear_list":"Clear List"
+        
+    }
+
+}
