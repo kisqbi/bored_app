@@ -13,7 +13,7 @@ Vue.config.productionTip = false
 Vue.config.API_URL = process.env.VUE_APP_API_URL
 Vue.config.BASE_URL = process.env.VUE_APP_BASE_URL
 if(process.env.VUE_APP_NODE_ENV==='development'){
-  Vue.config.API_URL = '/';
+ // Vue.config.API_URL = '/';
 
 }
 new Vue({
